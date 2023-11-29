@@ -1,0 +1,61 @@
+
+.container{
+    background: #000;
+}
+
+.roadmap{
+    height: 709px;
+    /* display: flex;
+        justify-content: space-between;
+        align-items: center; */
+        /* background: url('/imgs/png/hero.png') center/cover no-repeat; */
+        background: url('/imgs/svg/backgroundRoadmap.svg') center/cover no-repeat;
+        /* padding: 50px; */
+        
+}
+
+
+
+.title{
+    padding-top: 70px;
+    color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: 'Lapsus Pro Bold', sans-serif;
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2.24px;
+text-transform: uppercase;
+text-align: center;
+}
+
+
+.beesHouseImg{
+    position: absolute;
+    z-index: 1;
+}
+
+.lineForRoadmapImg{
+    position: absolute;
+    left: 0;
+    margin-top: 180px;
+    /* border: 1px solid #ff0000; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* left: 100px; */
+    max-width: 1440px;
+}
+.bee1Img{
+    position: absolute;
+    margin-top: 160px;
+    left: 300px;
+}
+.bee2Img{
+    position: absolute;
+    /* margin-top: 190px; */
+}
+.bee3Img{
+    position: absolute;
+    /* margin-top: 190px; */
+}

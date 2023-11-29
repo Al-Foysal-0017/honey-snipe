@@ -1,0 +1,97 @@
+.notification{
+    width: 1214px;
+height: 204px;
+flex-shrink: 0;
+
+
+border-radius: 47px;
+border: 2px solid #FFF;
+background: #25BF3E;
+/* filter: blur(2px); */
+/* #FFFFFF, #000000 */
+}
+
+.notificationTitle{
+    color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: 'Lapsus Pro Bold', sans-serif;
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2.24px;
+text-transform: uppercase;
+}
+
+
+.notificationDesc{
+    color: #FFF;
+text-align: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+/* font-family: Montserrat; */
+font-size: 21px;
+font-style: normal;
+font-weight: 600;
+line-height: 164.565%; /* 34.559px */
+letter-spacing: 0.84px;
+text-transform: uppercase;
+}
+
+
+
+.tokenomics{
+    display: flex;
+}
+
+.left{
+    border: 1px solid yellowgreen;
+    width: 100%;
+}
+
+.right{
+    border: 1px solid yellowgreen;
+}
+
+.title{
+    margin-top: 66px;
+    margin-bottom: 32px;
+    color: #FFB800;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: 'Lapsus Pro Bold', sans-serif;
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2.24px;
+text-transform: uppercase;
+}
+
+.subtitle{
+    margin-top: 10px;
+font-size: 21px;
+font-style: normal;
+font-weight: 600;
+line-height: 164.565%; /* 34.559px */
+letter-spacing: 0.84px;
+text-transform: uppercase;
+}
+
+.Holders{color: #397785;}
+.Liquidity{color: #BD4646;}
+.Airdrop{color: #D6BA23;}
+.Team{color: #FD8B12;}
+.Relaunch{color: #1EFFA0;}
+.Treasury{color: #329F20;}
+.Treasury{color: #DA8934;}
+
+
+.imgTitle{
+    color: #FEB42D;
+text-align: center;
+font-size: 21px;
+font-style: normal;
+font-weight: 900;
+line-height: 164.565%; /* 34.559px */
+letter-spacing: 0.84px;
+text-transform: uppercase;
+}
