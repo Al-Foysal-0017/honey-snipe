@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import Link from "next/link";
-import styles from "./NavAndSidebar.module.css";
+import styles from "./navAndSidebar.module.css";
 import { navRoutes } from "./NavLinks";
 import Image from "next/image";
 
