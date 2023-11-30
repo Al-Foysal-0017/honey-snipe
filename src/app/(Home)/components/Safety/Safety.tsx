@@ -1,41 +1,61 @@
 import React from 'react'
 import styles from "./safety.module.css"
 import Image from 'next/image'
+import Title from '../Title/Title'
+import Container from '@/components/Container/Container'
 
 const Safety = () => {
+  const data = [
+    {
+      subtitle:"Anti-Rug Measures",
+      desc:"Our bot is equipped with an anti-rug function, ensuring you participate in the safest launches."
+    },
+    {
+      subtitle:"Certik Audited",
+      desc:"Honey Snipe is audited by Certik, guaranteeing transparency and security."
+    },
+    {
+      subtitle:"Locked Tokens",
+      desc:"The Honey Snipe team has locked tokens and LP tokens, providing stability to the platform."
+    }
+  ]
   return (
-    <section className={styles.container}>
-      {/* LEFT */}
+    <div>
+    <div className={styles.container}>
+      {/* LEFT for Small Screen*/}
       <div className={styles.left}>
-        <div className={styles.title}>Safety First</div>
-        
-        {/* ITEM-01 */}
-        <div className={styles.item}>
-          <div className={styles.subtitle}>Anti-Rug Measures</div>
+        <Container>
+        <Title className={styles.title}>Safety First</Title>
+        {data.map((item, index)=>(
+          <div key={index} className={styles.item}>
+          <div className={styles.subtitle}>{item.subtitle}</div>
           <p className={styles.desc}>
-            Our bot is equipped with an anti-rug function, ensuring you participate in the safest launches.
+            {item.desc}
           </p>
         </div>
-        {/* ITEM-01 */}
-        <div className={styles.item}>
-          <div className={styles.subtitle}>Anti-Rug Measures</div>
-          <p className={styles.desc}>
-            Our bot is equipped with an anti-rug function, ensuring you participate in the safest launches.
-          </p>
-        </div>
-        {/* ITEM-01 */}
-        <div className={styles.item}>
-          <div className={styles.subtitle}>Anti-Rug Measures</div>
-          <p className={styles.desc}>
-            Our bot is equipped with an anti-rug function, ensuring you participate in the safest launches.
-          </p>
-        </div>
+        ))}
+        </Container>
       </div>
       {/* Right */}
       <div className={styles.right}>
-        <Image width={444} height={444} src="/imgs/svg/saftyBear.svg" alt="Hero Image" />
+        <Image className={styles.bearImg} width={444} height={444} src="/imgs/svg/saftyBear.svg" alt="bearImg" />
       </div>
-    </section>
+    </div>
+    {/* LEFT for Big Screen*/}
+    <div className={styles.leftForBigScreen}>
+      <div>
+        <Title className={styles.titleBigScreen}>Safety First</Title>
+        {data.map((item, index)=>(
+          <div key={index} className={styles.itemBigScreen}>
+          <div className={styles.subtitle}>{item.subtitle}</div>
+          <p className={styles.desc}>
+            {item.desc}
+          </p>
+        </div>
+        ))}
+      </div>
+    </div>
+    </div>
   )
 }
 

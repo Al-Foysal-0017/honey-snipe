@@ -1,47 +1,27 @@
-.test{ 
-    /* DELETE THIS */
-    min-height: 100vh; 
-}
-
 .title{
     margin-top: 80px;
-    color: #FFB800;
+    color: var(--color-orange);
     text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.54);
-    font-family: 'Lapsus Pro Bold', sans-serif;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.24px;
-    text-transform: uppercase;
     text-align: center;
 }
 
 .subtitle{
-    color: #FFB800;
-    text-align: justify;
-    font-family: 'Lapsus Pro Bold', sans-serif;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.84px;
-    text-transform: uppercase;
+    color: var(--color-orange);
     max-width: 980px;
-    text-align: center;
     margin: 0 auto;
     margin-top: 24px;
+    text-align: center;
 }
 
 .cards{
     margin-top: 20px;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
     gap: 18px;
 }
 
 .card{
+    width: 100%;
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -58,7 +38,7 @@
 
 .cardTitle{
     margin-top: 7px;
-    color: #000;
+    color: var(--color-black);
     font-size: 21px;
     font-style: normal;
     font-weight: 600;
@@ -70,7 +50,7 @@
 
 .cardDesc{
     margin-top: 16px;
-    color: #000;
+    color: var(--color-black);
     text-align: center;
     font-size: 17px;
     font-style: normal;

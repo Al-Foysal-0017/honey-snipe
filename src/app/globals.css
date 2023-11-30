@@ -5,14 +5,15 @@
   font-style: normal;
 }
 
-/* @import url('./fonts.css'); */
-
-
 :root {
   --color-white: #fff;
   --color-black: #000;
+  --color-orange: #FFB800;
 
   --desktop: 1440px;
+  --tab: 840px;
+  --mobi: 648px;
+  --sm: 524px;
 } 
 
 * {
@@ -22,39 +23,23 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* html,
-body {
-  max-width: 100vw;
-  background: var(--color-black-primary);
-  color: var(--color-white);
-  font-size: 14px;
-}
-
 a {
   color: inherit;
   text-decoration: none;
-} */
-
-
+} 
 
 
 /* Add custom styles for the scrollbar */
 ::-webkit-scrollbar {
-  width: 6px; /* Set the width of the scrollbar */
+  width: 6px;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: #F48101; 
-  border-radius: 4px; /* Rounded corners of the handle */
+  background-color: var(--color-orange); 
+  border-radius: 4px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-} */

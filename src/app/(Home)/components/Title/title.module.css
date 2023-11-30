@@ -1,0 +1,22 @@
+.title{
+    font-family: 'Lapsus Pro Bold', sans-serif;
+    color: var(--color-white);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.24px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 840px) {
+    .title{
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 648px) {
+    .title{
+        font-size: 38px;
+    }
+}

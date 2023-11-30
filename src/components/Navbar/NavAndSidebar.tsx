@@ -32,7 +32,6 @@ const NavAndSidebar = () => {
                   height={37}
                   className={styles.navbarContainerLogo}
                   style={{marginTop:"10px"}}
-                  // layout="responsive" 
                 />
               </Link>
             </div>

@@ -1,5 +1,4 @@
 .footerContainer{
-    margin-top: 148px;
     background: #202020;
 }
 
@@ -12,7 +11,7 @@
 
 .desc{
     margin-top: 8px;
-    color: #FFF;
+    color: var(--color-white);
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -28,7 +27,7 @@
 }
 
 .linksHeader{
-    color: #FFF;
+    color: var(--color-white);
     font-family: 'Quicksand', sans-serif;
     font-size: 22px;
     font-style: normal;
@@ -38,7 +37,7 @@
 
 .link{
     list-style-type: none;
-    color: #FFF;
+    color: var(--color-white);
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -53,7 +52,7 @@
 }
 
 .communityHeader{
-    color: #FFF;
+    color: var(--color-white);
     font-family: 'Quicksand', sans-serif;
     font-size: 22px;
     font-style: normal;
@@ -73,14 +72,14 @@
     justify-content: center;
     padding: 3px;
     border-radius: 6px;
-    background: #FFA800;
+    background: var(--color-orange);
     cursor: pointer;
 }
 
 .copyright{
     margin: 0 auto;
     padding: 14px 0;
-    background: #FFB800;
+    background: var(--color-orange);
     color: #121212;
     text-align: center;
     /* font-family: Gilroy; */
@@ -128,7 +127,6 @@
         padding-bottom: 3rem;
     }
 }
-
 
 @media (max-width: 640px) {
     .desc{
