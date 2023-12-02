@@ -48,7 +48,7 @@
 
 @media(max-width: 1124px) {
     .roadmapContainer{
-        height: 1400px;
+        /* height: 1400px; */
     }
     .lineForRoadmapImg{
         display: none;
