@@ -3,6 +3,7 @@ import styles from "./safety.module.css"
 import Image from 'next/image'
 import Title from '../Title/Title'
 import Container from '@/components/Container/Container'
+import Notification from '../Notifications/Notification'
 
 const Safety = () => {
   const data = [
@@ -55,6 +56,12 @@ const Safety = () => {
         ))}
       </div>
     </div>
+
+    {/* Notification Block Part */}
+    <Notification 
+      title="Fees" 
+      desc="Token Trading Fee: 4% of $HONEY token (fees reduce as market cap grows).Snipe Bot Fee: 2% for launching or arbitraging."
+    />
     </div>
   )
 }

@@ -31,7 +31,7 @@ const NavAndSidebar = () => {
                   width={240}
                   height={37}
                   className={styles.navbarContainerLogo}
-                  style={{marginTop:"10px"}}
+                  style={{marginTop:"4px"}}
                 />
               </Link>
             </div>
@@ -57,12 +57,14 @@ const NavAndSidebar = () => {
           className={`${openSidebar ? styles.translateForSidebar : styles.translateForSidebarNeg} ${styles.setSidebarForToggle} ${styles.transform} ${styles.transitionAll} ${styles.duration}`}
         >
           <div className={styles.sidebarTop}>
-            <Image
-              src="/imgs/png/bee.png"
-              alt=""
-              width={64}
-              height={64}
-            />
+            <Link onClick={()=>{setOpenSidebar(!openSidebar)}} href="/">
+              <Image
+                src="/imgs/svg/beesHouse.svg"
+                alt=""
+                width={124}
+                height={124}
+              />
+            </Link>
             <Hamburger
                     toggle={setOpenSidebar}
                     toggled={openSidebar}
@@ -72,7 +74,7 @@ const NavAndSidebar = () => {
           <ul className={styles.SidebarItems}>
             {navRoutes.map((item) => (
               <li key={item.name} className={styles.SidebarItem}>
-                <Link href={item.route} className={styles.link}>
+                <Link onClick={()=>{setOpenSidebar(!openSidebar)}} href={item.route} className={styles.link}>
                   {/* <a className={`${styles.link} ${router.pathname === item.route ? styles.activeClassNameOfSidebar : ""}`}>
                     {item.name}
                   </a> */}
@@ -83,7 +85,7 @@ const NavAndSidebar = () => {
           </ul>
           <div className={styles.bee2}>
             <Image
-                src="/imgs/png/bee.png"
+                src="/imgs/svg/bee1.svg"
                 alt=""
                 width={64}
                 height={64}
@@ -91,7 +93,7 @@ const NavAndSidebar = () => {
           </div>
           <div className={styles.bee3}>
             <Image
-                src="/imgs/png/bee.png"
+                src="/imgs/svg/bee3.svg"
                 alt=""
                 width={64}
                 height={64}

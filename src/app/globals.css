@@ -9,6 +9,7 @@
   --color-white: #fff;
   --color-black: #000;
   --color-orange: #FFB800;
+  --color-bg: #EDEDED;;
 
   --desktop: 1440px;
   --tab: 840px;
@@ -22,6 +23,11 @@
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
+body{
+  background: var(--color-bg);
+}
+
 
 a {
   color: inherit;

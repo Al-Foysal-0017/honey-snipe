@@ -1,0 +1,67 @@
+
+.container{
+    background: #000;
+}
+
+.roadmapContainer{
+    height: 840px;
+    background: url('/imgs/svg/backgroundRoadmap.svg') center/cover no-repeat;       
+}
+
+.roadmap{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.title{
+    padding-top: 70px;
+    text-align: center;
+}
+
+.beesHouseImg{
+    position: absolute;
+    z-index: 1;
+    margin-top: -40px; 
+}
+
+.lineForRoadmapImg{
+    margin-top: 180px;
+    max-width: 1440px;
+    padding-left: 140px;
+}
+
+.bee1Img{
+    position: absolute;
+    margin-top: 180px;
+    left: 300px;
+}
+
+.bee2Img{
+    position: absolute;
+    /* margin-top: 190px; */
+}
+
+.bee3Img{
+    position: absolute;
+    /* margin-top: 190px; */
+}
+
+@media(max-width: 1124px) {
+    .roadmapContainer{
+        height: 1400px;
+    }
+    .lineForRoadmapImg{
+        display: none;
+        /* transform: rotate(90deg); */
+    }
+}
+
+@media(max-width: 864px) {
+    .beesHouseImg{
+        width: 176px;
+        height: 296px;
+        position: absolute;
+        z-index: 1;
+        margin-top: 0; 
+    } 
+}
