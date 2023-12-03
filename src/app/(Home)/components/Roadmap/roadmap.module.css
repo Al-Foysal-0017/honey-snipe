@@ -1,11 +1,11 @@
 
 .container{
-    background: #000;
+    background: var(--color-black);
 }
 
 .roadmapContainer{
     height: 840px;
-    background: url('/imgs/svg/backgroundRoadmap.svg') center/cover no-repeat;       
+    background: url('/imgs/svg/backgroundRoadmap.svg') center/cover no-repeat;    
 }
 
 .roadmap{
@@ -38,30 +38,153 @@
 
 .bee2Img{
     position: absolute;
-    /* margin-top: 190px; */
 }
 
 .bee3Img{
     position: absolute;
-    /* margin-top: 190px; */
+}
+
+.contextContainerBig{
+    color: var(--color-white);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.68px;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.contextContainerSm{
+    display: none;
+    color: var(--color-white);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.68px;
+    text-transform: uppercase;
+}
+
+.ul1Big{
+    margin-top: -120px;
+    padding-left: 230px;
+    padding-right: 32px;
+}
+.ul2Big{
+    min-width: 300px;
+    padding-left: 40px;
+    margin-top: -250px;
+}
+.ul3Big{
+    padding-left: 64px;
+    margin-top: -72px;
+    padding-right: 32px;
+}
+
+.ul1{
+    padding-top: 180px;
+    padding-left: 230px;
+}
+.ul2{
+    padding-left: 140px;
+}
+.ul3{
+    padding-top: 40px;
+    padding-left: 220px;
+}
+
+.roadmapTitle{
+    margin-bottom: 10px;
+    color: var(--color-white);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+}
+
+
+
+
+@media(max-width: 1248px) {
+    .contextContainerBig{
+        font-size: 15px;
+    }
+    .roadmapTitle{
+        font-size: 19px;
+    }
+    .ul2Big{
+        margin-top: -230px;
+    }
 }
 
 @media(max-width: 1124px) {
     .roadmapContainer{
-        /* height: 1400px; */
+        height: 1200px;
     }
-    .lineForRoadmapImg{
-        display: none;
-        /* transform: rotate(90deg); */
-    }
-}
-
-@media(max-width: 864px) {
     .beesHouseImg{
         width: 176px;
         height: 296px;
-        position: absolute;
-        z-index: 1;
-        margin-top: 0; 
     } 
+    .lineForRoadmapImg{
+        display: none;
+    }
+    .contextContainerBig{
+        display: none;
+    }
+    .lineForRoadmapImgSm{
+        margin-top: 380px;
+        position: absolute;
+        left: 0;
+        transform: rotate(90deg);
+        margin-left: -240px;
+    }
+    .contextContainerSm{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+}
+
+@media(max-width: 664px) {
+    .contextContainerSm{
+        font-size: 12px;
+    }
+    .ul1{
+        padding-top: 220px;
+    }
+    .ul3{
+        padding-top: 50px;
+    }
+    .roadmapTitle{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 500px) {
+    .beesHouseImg{
+        width: 100px;
+        height: 220px;
+    } 
+    .lineForRoadmapImgSm{
+        margin-left: -350px;
+    }
+    .roadmapTitle{
+        font-size: 14px;
+    }
+    .ul1{
+        padding-top: 220px;
+        padding-left: 110px;
+    }
+    .ul2{
+        padding-left: 24px;
+    }
+    .ul3{
+        padding-top: 64px;
+        padding-left: 100px;
+    }
 }
