@@ -35,15 +35,15 @@ const Footer = () => {
                     <div className={styles.communityHeader}>Our Community</div>
                    
                     <div className={styles.communityLinks}>
-                        <span className={styles.communityLink}>
+                        {/* <span className={styles.communityLink}>
                             <Image className={styles.communityImg} width={20} height={20} src="/imgs/svg/instagram.svg" alt="" />
-                        </span>
-                        <span className={styles.communityLink}>
+                        </span> */}
+                        {/* <span className={styles.communityLink}>
                             <Image className={styles.communityImg} width={20} height={20} src="/imgs/svg/linkedin.svg" alt="" />
-                        </span>
-                        <span className={styles.communityLink}>
-                            <Image className={styles.communityImg} width={20} height={20} src="/imgs/svg/youtube.svg" alt="" />
-                        </span>
+                        </span> */}
+                        {/* <span className={styles.communityLink}>
+                            <Image style={{paddingTop:'4px'}} className={styles.communityImg} width={20} height={20} src="/imgs/svg/youtube.svg" alt="" />
+                        </span> */}
                         <span className={styles.communityLink}>
                             <Image className={styles.communityImg} width={20} height={20} src="/imgs/svg/telegram.svg" alt="" />
                         </span>
