@@ -2,6 +2,8 @@ import React from 'react'
 import styles from "./footer.module.css"
 import Image from 'next/image'
 import Container from '../Container/Container'
+import Link from 'next/link'
+import { communityLinks, localLinks } from './links'
 
 const Footer = () => {
   return (
@@ -25,31 +27,22 @@ const Footer = () => {
                 <div className={styles.links}>
                     <div className={styles.linksHeader}>Useful Links</div>
                     <ul className={styles.ul}>
-                        <li className={styles.link}>Home</li>
-                        <li className={styles.link}>About Us</li>
-                        <li className={styles.link}>Career</li>
-                        <li className={styles.link}>Whitepaper</li>
+                        {localLinks.map((item, index)=>(
+                            <li key={index} className={styles.link}>{item.name}</li>
+                        ))}
                     </ul>
                 </div>
                 <div className={styles.community}>
                     <div className={styles.communityHeader}>Our Community</div>
                    
                     <div className={styles.communityLinks}>
-                        {/* <span className={styles.communityLink}>
-                            <Image className={styles.communityImg} width={20} height={20} src="/imgs/svg/instagram.svg" alt="" />
-                        </span> */}
-                        {/* <span className={styles.communityLink}>
-                            <Image className={styles.communityImg} width={20} height={20} src="/imgs/svg/linkedin.svg" alt="" />
-                        </span> */}
-                        {/* <span className={styles.communityLink}>
-                            <Image style={{paddingTop:'4px'}} className={styles.communityImg} width={20} height={20} src="/imgs/svg/youtube.svg" alt="" />
-                        </span> */}
-                        <span className={styles.communityLink}>
-                            <Image className={styles.communityImg} width={20} height={20} src="/imgs/svg/telegram.svg" alt="" />
-                        </span>
-                        <span className={styles.communityLink}>
-                            <Image className={styles.communityImg} width={20} height={20} src="/imgs/svg/twitter.svg" alt="" />
-                        </span>
+                        {communityLinks.map((item, index)=>(
+                            <Link key={index} target="_blank" rel="honey snipe" href={item.href}>
+                                <span className={styles.communityLink}>
+                                    <Image className={styles.communityImg} width={20} height={20} src={item.src} alt="" />
+                                </span>
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </div>
