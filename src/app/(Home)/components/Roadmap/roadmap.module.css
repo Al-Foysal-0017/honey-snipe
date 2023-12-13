@@ -1,4 +1,3 @@
-
 .container{
     background: var(--color-black);
 }
@@ -19,66 +18,22 @@
 }
 
 .beesHouseImg{
-    position: absolute;
+    position: relative;
     z-index: 1;
-    margin-top: -40px; 
-}
-
-.lineForRoadmapImgDesktop{
-    margin-top: 64px;
-    /* max-width: 1440px; */
-    padding-left: 140px;
-    width: 100%;
-    height: auto;
-    /* border: 2px solid red; */
 }
 
 .lineForRoadmapImg{
-    display: none;
-    margin-top: 180px;
-    /* max-width: 1440px; */
+    margin-top: -280px;
     padding-left: 140px;
     width: 100%;
-    height: auto;
-    /* border: 2px solid red; */
 }
 
-.bee1Img{
+.lineForRoadmapImgSm{
+    margin-top: 150px;
     position: absolute;
-    margin-top: 180px;
-    left: 300px;
-}
-
-.bee2Img{
-    position: absolute;
-}
-
-.bee3Img{
-    position: absolute;
-}
-
-.contextContainerBigDesktop{
-    color: var(--color-white);
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.68px;
-    text-transform: uppercase;
-    display: flex;
-    /* border: 2px solid green; */
-}
-
-.contextContainerBig{
-    color: var(--color-white);
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.68px;
-    text-transform: uppercase;
-    display: flex;
-    display: none;
+    left: 0;
+    transform: rotate(90deg);
+    margin-left: -280px;
 }
 
 .contextContainerSm{
@@ -92,54 +47,20 @@
     text-transform: uppercase;
 }
 
-.ul1BigDesktop{
-    margin-top: -240px;
-    padding-left: 450px;
-    /* border: 3px solid white; */
-}
-.ul2BigDesktop{
-    min-width: 300px;
-    padding-left: 280px;
-    margin-top: -280px;
-    /* border: 3px solid white; */
-}
-.ul3BigDesktop{
-    padding-left: 280px;
-    margin-top: -180px;
-    /* border: 3px solid white; */
-}
-
-.ul1Big{
-    margin-top: -120px;
-    padding-left: 230px;
-    padding-right: 32px;
-}
-.ul2Big{
-    min-width: 300px;
-    padding-left: 40px;
-    margin-top: -250px;
-}
-.ul3Big{
-    padding-left: 64px;
-    margin-top: -72px;
-    padding-right: 32px;
-}
-
-.ul1{
-    padding-top: 180px;
-    padding-left: 230px;
-}
-.ul2{
-    padding-left: 140px;
-}
-.ul3{
-    padding-top: 40px;
-    padding-left: 220px;
+.contextContainer{
+    color: var(--color-white);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.68px;
+    text-transform: uppercase;
+    display: flex;
+    margin-left: 450px;
 }
 
 .roadmapTitle{
-    margin-bottom: 10px;
-    color: var(--color-white);
+    color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 21px;
     font-style: normal;
@@ -147,80 +68,74 @@
     line-height: normal;
     letter-spacing: 0.84px;
     text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.ul1{
+    width: 33%;
+    margin-top: -240px;
+}
+.ul2{
+    width: 33%;
+    margin-top: -250px;
+}
+.ul3{
+    width: 33%;
+    margin-top: -220px;
 }
 
 
-@media(max-width: 2448px) {
-    .ul1BigDesktop{
-        margin-top: -200px;
-        padding-left: 250px;
-        width: 33%;
-        /* padding-right: 32px; */
+@media(max-width: 2200px) {
+    .contextContainer{
+        margin-left: 350px;
     }
-    .ul2BigDesktop{
-        /* min-width: 300px;
-        padding-left: 280px;
-        margin-top: -280px; */
-        padding-left: 250px;
-        width: 33%;
+    .ul1{
+        margin-top: -180px;
     }
-    .ul3BigDesktop{
-        /* padding-left: 280px;
-        margin-top: -180px; */
-        padding-left: 80px;
-        padding-right: 140px;
-        width: 33%;
+    .ul3{
+        margin-top: -180px;
     }
 }
 
 @media(max-width: 2000px) {
-    .ul1BigDesktop{
+    .contextContainer{
+        margin-left: 320px;
+    }
+    .ul1{
         margin-top: -150px;
-        width: 40%;
     }
-    .ul2BigDesktop{
-        margin-top: -250px;
-        padding-left: 80px;
-        width: 30%;
+    .ul2{
+        margin-top: -220px;
     }
-    .ul3BigDesktop{
-        padding-left: 40px;
-        width: 30%;
-    }
-}
-
-@media(max-width: 1700px) {
-    .ul3BigDesktop{
+    .ul3{
         margin-top: -150px;
-        padding-left: 40px;
-        width: 30%;
     }
 }
 
-
-@media(max-width: 1441px) {
-    .lineForRoadmapImgDesktop{
-        display: none;
+@media(max-width: 1800px) {
+    .contextContainer{
+        margin-left: 280px;
     }
-    .contextContainerBigDesktop{
-        display: none;
+    .ul1{
+        margin-top: -120px;
     }
-    .lineForRoadmapImg{
-        display: block;
-    }
-    .contextContainerBig{
-        display: flex;
+    .ul3{
+        margin-top: -110px;
     }
 }
-@media(max-width: 1248px) {
-    .contextContainerBig{
-        font-size: 15px;
+
+@media(max-width: 1500px) {
+    .contextContainer{
+        margin-left: 220px;
     }
-    .roadmapTitle{
-        font-size: 19px;
+    .ul1{
+        margin-top: -80px;
     }
-    .ul2Big{
+    .ul2{
         margin-top: -230px;
+    }
+    .ul3{
+        margin-top: -80px;
     }
 }
 
@@ -228,43 +143,46 @@
     .roadmapContainer{
         height: 1200px;
     }
-    .beesHouseImg{
-        width: 176px;
-        height: 296px;
-    } 
-    .lineForRoadmapImg{
+    .contextContainer{
         display: none;
-    }
-    .contextContainerBig{
-        display: none;
-    }
-    .lineForRoadmapImgSm{
-        margin-top: 380px;
-        position: absolute;
-        left: 0;
-        transform: rotate(90deg);
-        margin-left: -240px;
     }
     .contextContainerSm{
         display: flex;
         flex-direction: column;
         gap: 5rem;
     }
-
+    .beesHouseImg{
+        width: 170px;
+        height: 296px;
+    } 
+    .lineForRoadmapImg{
+        display: none;
+    }
+    .ul1_Sm{
+        padding-left: 200px;
+        padding-right: 1rem;
+    }
+    .ul2_Sm{
+        padding-left: 100px;
+        margin-top: -24px;
+        padding-right: 1rem;
+    }
+    .ul3_Sm{
+        margin-top: 64px;
+        padding-left: 200px;
+        padding-right: 1rem;
+    }
 }
 
 @media(max-width: 664px) {
     .contextContainerSm{
         font-size: 12px;
     }
-    .ul1{
-        padding-top: 220px;
+    .ul2_Sm{
+        margin-top: 24px;
     }
-    .ul3{
-        padding-top: 50px;
-    }
-    .roadmapTitle{
-        font-size: 18px;
+    .ul3_Sm{
+        margin-top: 64px;
     }
 }
 
@@ -276,18 +194,14 @@
     .lineForRoadmapImgSm{
         margin-left: -350px;
     }
-    .roadmapTitle{
-        font-size: 14px;
+    .ul1_Sm{
+        padding-left: 108px;
     }
-    .ul1{
-        padding-top: 220px;
-        padding-left: 110px;
-    }
-    .ul2{
+    .ul2_Sm{
         padding-left: 24px;
     }
-    .ul3{
-        padding-top: 64px;
-        padding-left: 100px;
+    .ul3_Sm{
+        padding-left: 108px;
     }
 }
+

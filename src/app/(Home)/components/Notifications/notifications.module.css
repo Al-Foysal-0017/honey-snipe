@@ -21,6 +21,9 @@
     border-image-slice: 1;
     border-radius: 47px; */
     /* filter: blur(2px); */
+    box-shadow: 0px 4px 11px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 4px 11px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 11px 1px rgba(0,0,0,0.75);
 }
 
 .notificationTitle{

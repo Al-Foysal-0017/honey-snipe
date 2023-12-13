@@ -1,16 +1,19 @@
+"use client"
 import React from 'react'
 import styles from "./footer.module.css"
 import Image from 'next/image'
 import Container from '../Container/Container'
 import Link from 'next/link'
 import { communityLinks, localLinks } from './links'
+import { usePathname } from 'next/navigation'
 
 const Footer = () => {
+    const pathname = usePathname()
   return (
     <footer className={styles.footerContainer}>
         <Container className={styles.footer}>
             <div className={styles.left}>
-                <div className={styles.logo}>
+                <Link href="/" className={styles.logo}>
                     <Image
                         src="/imgs/svg/logo.svg"
                         alt=""
@@ -18,7 +21,7 @@ const Footer = () => {
                         height={37}
                         style={{marginTop:"10px"}}
                     />
-                </div>
+                </Link>
                 <div className={styles.desc}>
                     Welcome to Honey Snipe, your go-to hybrid bot for navigating the world of crypto launches and arbitrage on both the Ethereum and Binance Smart Chain.
                 </div>
@@ -28,7 +31,11 @@ const Footer = () => {
                     <div className={styles.linksHeader}>Useful Links</div>
                     <ul className={styles.ul}>
                         {localLinks.map((item, index)=>(
-                            <li key={index} className={styles.link}>{item.name}</li>
+                            <Link href={item.route} key={index}>
+                                <li className={`${styles.link} ${pathname === item.route ? styles.activeLink : ""}`}>
+                                    {item.name}
+                                </li>
+                            </Link>
                         ))}
                     </ul>
                 </div>

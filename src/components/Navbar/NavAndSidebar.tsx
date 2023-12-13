@@ -2,12 +2,14 @@
 import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 import styles from "./navAndSidebar.module.css";
 import { navRoutes } from "./NavLinks";
 import Image from "next/image";
 
 const NavAndSidebar = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
+  const pathname = usePathname()
 
   return (
     <header className={styles.navbarAndSidebar}>
@@ -40,10 +42,7 @@ const NavAndSidebar = () => {
           <div className={styles.navbarContainerRightItems}>
             {navRoutes.map((item) => (
               <div key={item.name} className={styles.navbarContainerRightItem}>
-                <Link href={item.route} className={styles.navlink}>
-                  {/* <a className={`${styles.link} ${router.pathname === item.route ? styles.activeClassNameOfSidebar : ""}`}>
-                    {item.name}
-                  </a> */}
+                <Link href={item.route} className={`${styles.navlink} ${pathname === item.route ? styles.activeNavlink : ""}`}>
                   {item.name}
                 </Link>
               </div>
@@ -74,10 +73,7 @@ const NavAndSidebar = () => {
           <ul className={styles.SidebarItems}>
             {navRoutes.map((item) => (
               <li key={item.name} className={styles.SidebarItem}>
-                <Link onClick={()=>{setOpenSidebar(!openSidebar)}} href={item.route} className={styles.link}>
-                  {/* <a className={`${styles.link} ${router.pathname === item.route ? styles.activeClassNameOfSidebar : ""}`}>
-                    {item.name}
-                  </a> */}
+                <Link onClick={()=>{setOpenSidebar(!openSidebar)}} href={item.route} className={`${styles.link} ${pathname === item.route ? styles.activeLink : ""}`} >
                   {item.name}
                 </Link>
               </li>

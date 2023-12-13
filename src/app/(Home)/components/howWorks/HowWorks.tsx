@@ -32,10 +32,12 @@ const HowWorks = () => {
         <div className={styles.cards}>
             {data.map((item, index)=>(
             <div key={index} className={styles.card}>
-                <div className={styles.cardIcon}>
-                    <Image width={118} height={118} src={item.imgPath} alt="" />
+                <div className={styles.iconAndTitle}>
+                    <div className={styles.cardIcon}>
+                        <Image width={118} height={118} src={item.imgPath} alt="" />
+                    </div>
+                    <div className={styles.cardTitle}>{item.cardTitle}</div>
                 </div>
-                <div className={styles.cardTitle}>{item.cardTitle}</div>
                 <p className={styles.cardDesc}>{item.cardDesc}</p>
             </div>
             ))}

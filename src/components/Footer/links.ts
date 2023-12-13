@@ -1,8 +1,20 @@
 export const localLinks = [
-    {name:"Home"},
-    {name:"About Us"},
-    {name:"Career"},
-    {name:"Whitepaper"},
+    {
+        name:"Home",
+        route:"/"
+    },
+    {
+        name:"About Us",
+        route:"/about-us"
+    },
+    {
+        name:"Contact Us",
+        route:"/contact-us"
+    },
+    {
+        name:"Whitepaper",
+        route:"/whitepaper"
+    },
 ]
 export const communityLinks = [
     // {

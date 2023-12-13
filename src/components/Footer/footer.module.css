@@ -43,11 +43,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: 36px; /* 200% */
-    opacity: 0.8;
+    opacity: 0.5;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
 .link:hover{
+    opacity: 1;
+}
+.activeLink{
     opacity: 1;
 }
 

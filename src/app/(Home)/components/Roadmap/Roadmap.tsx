@@ -17,79 +17,14 @@ const Roadmap = () => {
               width={1321}
               height={206} 
               layout="responsive" 
-              src="/imgs/svg/lineForRoadmap.svg" 
-              alt="" 
-            />
-            <Image 
-              className={styles.lineForRoadmapImgDesktop} 
-              width={1321}
-              height={206} 
-              layout="responsive" 
-              src="/imgs/svg/lineForRoadmap.svg" 
+              // src="/imgs/svg/lineForRoadmap.svg" 
+              src="/imgs/png/line.png" 
               alt="" 
             />
           </div>
 
           {/* Text for Big Desktop Screen */}
-          <div className={styles.contextContainerBigDesktop}>
-            <ul className={styles.ul1BigDesktop}>
-              <div className={styles.roadmapTitle}>Q4(2023)-Early Q1(2024)</div>
-              <li>Private Sale</li>
-              <li>Public Sale</li>
-              <li>Certik Audit</li>
-              <li>List $HONEY on Uniswap & Pancakeswap</li>
-              <li>Launch Web dApp</li>
-              <li>Introduce Sniping Telegram Bot</li>
-            </ul>
-            <ul className={styles.ul2BigDesktop}>
-              <div className={styles.roadmapTitle}>Q2(2024)</div>
-              <li>Reach 10,000 Users</li>
-              <li>Achieve 20,000 Holders</li>
-              <li>Introduce Copy Snipe Feature</li>
-            </ul>
-            <ul className={styles.ul3BigDesktop}>
-              <div className={styles.roadmapTitle}>Early Q3(2024)</div>
-              <li>Support New Chains (Major Chains)</li>
-              <li>Implement DeFi Solutions</li>
-              <li>Introduce Copy Futures Trade on dApps (DYDX, GMX, etc.)</li>
-            </ul>
-          </div>
-
-          {/* Text for Big Laptop Screen */}
-          <div className={styles.contextContainerBig}>
-            <ul className={styles.ul1Big}>
-              <div className={styles.roadmapTitle}>Q4(2023)-Early Q1(2024)</div>
-              <li>Private Sale</li>
-              <li>Public Sale</li>
-              <li>Certik Audit</li>
-              <li>List $HONEY on Uniswap & Pancakeswap</li>
-              <li>Launch Web dApp</li>
-              <li>Introduce Sniping Telegram Bot</li>
-            </ul>
-            <ul className={styles.ul2Big}>
-              <div className={styles.roadmapTitle}>Q2(2024)</div>
-              <li>Reach 10,000 Users</li>
-              <li>Achieve 20,000 Holders</li>
-              <li>Introduce Copy Snipe Feature</li>
-            </ul>
-            <ul className={styles.ul3Big}>
-              <div className={styles.roadmapTitle}>Early Q3(2024)</div>
-              <li>Support New Chains (Major Chains)</li>
-              <li>Implement DeFi Solutions</li>
-              <li>Introduce Copy Futures Trade on dApps (DYDX, GMX, etc.)</li>
-            </ul>
-          </div>
-          
-
-          {/* Text for Small Screen */}
-          <div className={styles.contextContainerSm}>
-            <Image 
-              className={styles.lineForRoadmapImgSm} 
-              width={740}
-              height={200} 
-              src="/imgs/svg/lineForRoadmap.svg" 
-              alt="" 
-            />
+          <div className={styles.contextContainer}>
             <ul className={styles.ul1}>
               <div className={styles.roadmapTitle}>Q4(2023)-Early Q1(2024)</div>
               <li>Private Sale</li>
@@ -107,13 +42,48 @@ const Roadmap = () => {
             </ul>
             <ul className={styles.ul3}>
               <div className={styles.roadmapTitle}>Early Q3(2024)</div>
+              <li>Support New Chains <br />(Major Chains)</li>
+              <li>Implement DeFi Solutions</li>
+              <li>Introduce Copy Futures Trade <br />on dApps (DYDX, GMX, etc.)</li>
+            </ul>
+          </div>
+          
+
+          {/* Text for Small Screen */}
+          <div className={styles.contextContainerSm}>
+            <Image 
+              className={styles.lineForRoadmapImgSm} 
+              width={740}
+              height={200}
+              src="/imgs/svg/lineForRoadmap.svg" 
+              alt="" 
+            />
+            <ul className={styles.ul1_Sm}>
+              <div className={styles.roadmapTitle}>Q4(2023)-Early Q1(2024)</div>
+              <li>Private Sale</li>
+              <li>Public Sale</li>
+              <li>Certik Audit</li>
+              <li>List $HONEY on Uniswap & Pancakeswap</li>
+              <li>Launch Web dApp</li>
+              <li>Introduce Sniping Telegram Bot</li>
+            </ul>
+            <ul className={styles.ul2_Sm}>
+              <div className={styles.roadmapTitle}>Q2(2024)</div>
+              <li>Reach 10,000 Users</li>
+              <li>Achieve 20,000 Holders</li>
+              <li>Introduce Copy Snipe Feature</li>
+            </ul>
+            <ul className={styles.ul3_Sm}>
+              <div className={styles.roadmapTitle}>Early Q3(2024)</div>
               <li>Support New Chains (Major Chains)</li>
               <li>Implement DeFi Solutions</li>
-              <li>Introduce Copy Futures Trade on dApps (DYDX, GMX, etc.)</li>
+              <li>Introduce Copy Futures Trade <br />on dApps (DYDX, GMX, etc.)</li>
             </ul>
           </div>
         </div>
         </div>
+
+        
 
         {/* Notification Text in Bottom */}
         <Notification 

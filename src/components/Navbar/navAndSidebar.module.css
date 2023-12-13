@@ -52,7 +52,9 @@
   letter-spacing: 0.92px;
   text-transform: uppercase;
   text-decoration: none;
-  
+}
+.activeNavlink{
+  color: var(--color-orange);
 }
 
 
@@ -89,7 +91,7 @@
   align-items: center;
 }
 .SidebarItems{
-  margin-top: 1rem;
+  margin-top: 3rem;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -114,6 +116,9 @@
   letter-spacing: 0.92px;
   text-transform: uppercase;
   text-decoration: none;
+}
+.activeLink{
+  color: #ea6b01;
 }
 .bee2{
   margin-top: 2rem;
