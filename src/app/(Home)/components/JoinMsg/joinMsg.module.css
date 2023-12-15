@@ -23,30 +23,50 @@
 
 
 @media (max-width: 1124px) {
+    .container{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
     .joinMsg{
         font-size: 56px;
     }
 }
 
 @media (max-width: 840px) {
+    .container{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
     .joinMsg{
         font-size: 48px;
     }
 }
 
 @media (max-width: 648px) {
+    .container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     .joinMsg{
         font-size: 40px;
     }
 }
 
 @media (max-width: 524px) {
+    .container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .joinMsg{
         font-size: 36px;
     }
 }
 
 @media (max-width: 380px) {
+    .container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .joinMsg{
         font-size: 32px;
     }
