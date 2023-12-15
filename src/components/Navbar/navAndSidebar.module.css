@@ -41,6 +41,11 @@
 .navbarContainerRightItem{
   padding-left: 25px;
   cursor: pointer;
+  transition: text-shadow 0.3s ease;
+}
+.navbarContainerRightItem:hover{
+/* color: var(--color-orange); */
+text-shadow: 2px -2px 5px white;
 }
 .navlink{
   color: var(--color-white);
