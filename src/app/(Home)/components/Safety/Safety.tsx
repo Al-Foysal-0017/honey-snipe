@@ -1,9 +1,11 @@
-import React from 'react'
+"use client"
+import React, { useRef } from 'react'
 import styles from "./safety.module.css"
 import Image from 'next/image'
 import Title from '../Title/Title'
 import Container from '@/components/Container/Container'
 import Notification from '../Notifications/Notification'
+import hover3d from '@/utils/hover'
 
 const Safety = () => {
   const data = [
@@ -20,8 +22,19 @@ const Safety = () => {
       desc:"The Honey Snipe team has locked tokens and LP tokens, providing stability to the platform."
     }
   ]
+  const hero = useRef<HTMLDivElement>(null);
+  const hoverHero = hover3d(hero, {
+    x: 30,
+    y: -40,
+    z: 30,
+  });
+  const imageHover = hover3d(hero, {
+    x: 20,
+    y: -5,
+    z: 11,
+  });
   return (
-    <div>
+    <div style={{overflow:'hidden'}} ref={hero}>
     <div className={styles.container}>
       {/* LEFT for Small Screen*/}
       <div className={styles.left}>
@@ -39,7 +52,25 @@ const Safety = () => {
       </div>
       {/* Right */}
       <div className={styles.right}>
-        <Image className={styles.bearImg} width={444} height={444} src="/imgs/svg/saftyBear.svg" alt="bearImg" />
+      <div className={styles.rightSide}>
+              <div
+                style={{
+                  transform: hoverHero.transform,
+                }}
+              >
+                <Image
+                  src="/imgs/svg/saftyBear.svg"
+                  width={444}
+                  height={444}
+                  alt="hero"
+                  className={styles.bearImg}
+                  style={{
+                    transform: imageHover.transform,
+                  }}
+                />
+              </div>
+          </div>
+        {/* <Image className={styles.bearImg} width={444} height={444} src="/imgs/svg/saftyBear.svg" alt="bearImg" /> */}
       </div>
     </div>
     {/* LEFT for Big Screen*/}

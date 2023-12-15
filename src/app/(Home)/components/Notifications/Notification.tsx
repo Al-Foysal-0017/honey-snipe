@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import styles from "./notifications.module.css"
 import Title from '../Title/Title'

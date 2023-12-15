@@ -124,6 +124,12 @@
     }
 }
 
+@media(max-width: 1700px) {
+    .ul2{
+        margin-top: -240px;
+    }
+}
+
 @media(max-width: 1500px) {
     .contextContainer{
         margin-left: 220px;
