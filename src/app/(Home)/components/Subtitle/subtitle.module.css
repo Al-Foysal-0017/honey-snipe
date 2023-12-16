@@ -6,7 +6,7 @@
     line-height: normal;
     letter-spacing: 0.84px;
     text-transform: uppercase;
-    font-family: 'Lapsus Pro Bold', sans-serif;
+    font-family: var(--style-font);
 }
 
 @media (max-width: 840px) {

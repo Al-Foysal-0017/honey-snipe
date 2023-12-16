@@ -1,5 +1,5 @@
 .title{
-    font-family: 'Lapsus Pro Bold', sans-serif;
+    font-family: var(--style-font);
     color: var(--color-white);
     font-size: 56px;
     font-style: normal;
@@ -20,3 +20,5 @@
         font-size: 38px;
     }
 }
+
+

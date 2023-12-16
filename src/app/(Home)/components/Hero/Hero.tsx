@@ -8,45 +8,45 @@ import Subtitle from '../Subtitle/Subtitle';
 import hover3d from "@/utils/hover";
 
 const Hero = () => {
-  // framer-motion1
-  const hero = useRef<HTMLDivElement>(null);
-  const hoverHero = hover3d(hero, {
+  // Framer-Motion Set on Bear Image
+  const heroBearImg = useRef<HTMLDivElement>(null);
+  const hoverBearImg = hover3d(heroBearImg, {
     x: 30,
     y: -40,
     z: 30,
   });
-  const imageHover = hover3d(hero, {
+  const imageHover = hover3d(hoverBearImg, {
     x: 20,
     y: -5,
     z: 11,
   });
 
-  // framer-motion2
-  const hero2 = useRef<HTMLDivElement>(null);
-  const hoverHero2 = hover3d(hero2, {
+  // Framer-Motion Set on Text
+  const heroText = useRef<HTMLDivElement>(null);
+  const hoverHeroText = hover3d(heroText, {
     y: 30,
     x: -40,
     z: 11,
   });
-  const imageHover2 = hover3d(hero2, {
+  const textHover = hover3d(hoverHeroText, {
     y: 20,
     x: -5,
     z: 30,
   });
   
   return (
-    <div ref={hero} className={styles.hero}>
-      <div ref={hero2} className={styles.heroSection}>
+    <div ref={heroBearImg} className={styles.hero}>
+      <div ref={heroText} className={styles.heroSection}>
         <Container className={styles.wrapper}>
           <div 
             style={{
-              transform: hoverHero2.transform,
+              transform: hoverHeroText.transform,
             }}
             className={styles.leftSide}
           >
             <div 
               style={{
-                transform: imageHover2.transform,
+                transform: textHover.transform,
               }}
             >
               <Title className={styles.title}>
@@ -60,7 +60,7 @@ const Hero = () => {
           <div className={styles.rightSide}>
             <div
               style={{
-                transform: hoverHero.transform,
+                transform: hoverBearImg.transform,
               }}
             >
               <Image

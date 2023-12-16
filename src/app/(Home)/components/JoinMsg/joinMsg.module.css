@@ -9,8 +9,7 @@
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Lapsus Pro Bold', sans-serif;
-    /* font-size: 63px; */
-    font-size: 84px;
+    font-size: 63px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -74,35 +73,3 @@
 
 
 
-
-
-
-.marquee {
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    height: 206px;
-    overflow-x: hidden;
-  }
-  
-  .track {
-    position: absolute;
-    white-space: nowrap;
-  }
-  
-  .track > h1 {
-    margin: 20px 0;
-    font-size: 8rem;
-    /* font-family: Antonio; */
-    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-    font-family: 'Lapsus Pro Bold', sans-serif;
-
-    /* -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #f4955c; */
-    text-transform: uppercase;
-  }
-
-
-
- 

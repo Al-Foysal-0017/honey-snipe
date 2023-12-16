@@ -70,7 +70,6 @@ const Safety = () => {
                 />
               </div>
           </div>
-        {/* <Image className={styles.bearImg} width={444} height={444} src="/imgs/svg/saftyBear.svg" alt="bearImg" /> */}
       </div>
     </div>
     {/* LEFT for Big Screen*/}

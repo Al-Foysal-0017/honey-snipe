@@ -17,7 +17,6 @@ const Roadmap = () => {
               width={1321}
               height={206} 
               layout="responsive" 
-              // src="/imgs/svg/lineForRoadmap.svg" 
               src="/imgs/png/line.png" 
               alt="" 
             />
@@ -82,8 +81,6 @@ const Roadmap = () => {
           </div>
         </div>
         </div>
-
-        
 
         {/* Notification Text in Bottom */}
         <Notification 
