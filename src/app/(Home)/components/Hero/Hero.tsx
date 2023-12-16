@@ -49,8 +49,8 @@ const Hero = () => {
                 transform: textHover.transform,
               }}
             >
-              <Title className={styles.title}>
-                Unlock the Power of Honey Snipe
+              <Title top className={styles.title}>
+                  Unlock the Power of Honey Snipe
               </Title>
               <Subtitle className={styles.subtitle}>
                 Welcome to Honey Snipe, your go-to hybrid bot for navigating the world of crypto launches and arbitrage on both the Ethereum and Binance Smart Chain.

@@ -2,9 +2,9 @@
 import React from 'react'
 import styles from "./howWorks.module.css"
 import Container from '@/components/Container/Container'
-import Image from 'next/image'
 import Title from '../Title/Title'
 import Subtitle from '../Subtitle/Subtitle'
+import AnimationProvider from './AnimationProvider'
 
 const HowWorks = () => {
   const data = [
@@ -31,15 +31,12 @@ const HowWorks = () => {
         <Subtitle className={styles.subtitle}>Welcome to Honey Snipe, your go-to hybrid bot for navigating the world of crypto launches and arbitrage on both the Ethereum and Binance Smart Chain. Whether you're looking to snipe upcoming launches, capitalize on arbitrage opportunities, or trade tokens on Uniswap and Pancakeswap, Honey Snipe is your gateway to maximizing profits.</Subtitle>
         <div className={styles.cards}>
             {data.map((item, index)=>(
-            <div key={index} className={styles.card}>
-                <div className={styles.iconAndTitle}>
-                    <div className={styles.cardIcon}>
-                        <Image width={118} height={118} src={item.imgPath} alt="" />
-                    </div>
-                    <div className={styles.cardTitle}>{item.cardTitle}</div>
-                </div>
-                <p className={styles.cardDesc}>{item.cardDesc}</p>
-            </div>
+            <AnimationProvider
+                imgPath={item.imgPath}
+                cardTitle={item.cardTitle}
+                cardDesc={item.cardDesc}
+                index={index}
+            />
             ))}
         </div>
     </Container>

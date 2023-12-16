@@ -18,6 +18,10 @@
     display: flex;
     justify-content: space-between;
     gap: 18px;
+    /* border: 2px solid red; */
+}
+.motionCard{
+    width: 100%;
 }
 .card{
     width: 100%;

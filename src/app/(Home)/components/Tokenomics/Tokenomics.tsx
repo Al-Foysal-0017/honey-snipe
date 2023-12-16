@@ -5,8 +5,40 @@ import styles from './tokenomics.module.css';
 import Image from 'next/image';
 import Container from '@/components/Container/Container';
 import Title from '../Title/Title';
+import AnimationProvider from './AnimationProvider';
 
 const Tokenomics = () => {
+  const data = [
+    {
+      text: "Holders: 20% (1,800,000 Honey)",
+      textStyle: "Holders",
+    },
+    {
+      text: "Liquidity: 13.7% (1,234,285 Honey)",
+      textStyle: "Liquidity",
+    },
+    {
+      text: "AIRDROP: 1% (90,000 HONEY)",
+      textStyle: "Airdrop",
+    },
+    {
+      text: "TEAM: 10% (900,000 HONEY, 6% LOCKED FOR 10 YEARS)",
+      textStyle: "Team",
+    },
+    {
+      text: "RELAUNCH BURN: 1% (90,000 HONEY)",
+      textStyle: "Relaunch",
+    },
+    {
+      text: "TREASURY (LIQUID): 4% (360,000 HONEY)",
+      textStyle: "Treasury",
+    },
+    {
+      text: "TREASURY (LOCKED): 50.28% (4,525,715 HONEY)",
+      textStyle: "TreasuryLocked",
+    },
+  ];
+
   // Define animation variants
   const bounceVariant = {
     initial: { y: 0 },
@@ -15,7 +47,7 @@ const Tokenomics = () => {
 
   const rotateVariant = {
     initial: { rotateY: 0 },
-    animate: { rotateY: 360, transition: {repeat: Infinity, duration: 2, ease: 'easeInOut' } },
+    animate: { rotateY: 360, transition: { repeat: Infinity, duration: 2, ease: 'easeInOut' } },
   } as const;
 
   return (
@@ -23,13 +55,14 @@ const Tokenomics = () => {
       <div className={styles.tokenomics}>
         <div className={styles.left}>
           <Title className={styles.title}>Tokenomics</Title>
-          <p className={`${styles.subtitle} ${styles.Holders}`}>Holders: 20% (1,800,000 Honey)</p>
-          <p className={`${styles.subtitle} ${styles.Liquidity}`}>Liquidity: 13.7% (1,234,285 Honey)</p>
-          <p className={`${styles.subtitle} ${styles.Airdrop}`}>Airdrop: 1% (90,000 Honey)</p>
-          <p className={`${styles.subtitle} ${styles.Team}`}>Team: 10% (900,000 Honey, 6% locked for 10 years)</p>
-          <p className={`${styles.subtitle} ${styles.Relaunch}`}>Relaunch Burn: 1% (90,000 Honey)</p>
-          <p className={`${styles.subtitle} ${styles.Treasury}`}>Treasury (Liquid): 4% (360,000 Honey)</p>
-          <p className={`${styles.subtitle} ${styles.TreasuryLocked}`}>Treasury (Locked): 50.28% (4,525,715 Honey)</p>
+          {data.map((item, index) => (
+            <AnimationProvider
+              key={index}
+              text={item.text}
+              textStyle={styles[`${item.textStyle}`]}
+              index={index}
+            />
+          ))}
         </div>
         <div className={styles.right}>
           <motion.div className={styles.imageContainer} variants={bounceVariant} initial="initial" animate="animate">
