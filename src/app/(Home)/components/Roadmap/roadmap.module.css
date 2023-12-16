@@ -73,6 +73,7 @@
 
 .ul1{
     width: 33%;
+    /* border: 3px solid red; */
     margin-top: -240px;
 }
 .ul2{
@@ -174,7 +175,7 @@
         padding-right: 1rem;
     }
     .ul3_Sm{
-        margin-top: 64px;
+        margin-top: 24px;
         padding-left: 200px;
         padding-right: 1rem;
     }
@@ -188,7 +189,7 @@
         margin-top: 24px;
     }
     .ul3_Sm{
-        margin-top: 64px;
+        margin-top: 24px;
     }
 }
 
@@ -205,9 +206,18 @@
     }
     .ul2_Sm{
         padding-left: 24px;
+        margin-top: 0;
     }
     .ul3_Sm{
         padding-left: 108px;
+        margin-top: 48px;
     }
 }
+
+@media(max-width: 402px) {
+    .ul3_Sm{
+        margin-top: 24px;
+    }
+}
+
 

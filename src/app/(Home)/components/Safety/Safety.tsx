@@ -6,6 +6,7 @@ import Title from '../Title/Title'
 import Container from '@/components/Container/Container'
 import Notification from '../Notifications/Notification'
 import hover3d from '@/utils/hover'
+import AnimationProvider from './AnimationProvider'
 
 const Safety = () => {
   const data = [
@@ -77,12 +78,7 @@ const Safety = () => {
       <div>
         <Title className={styles.titleBigScreen}>Safety First</Title>
         {data.map((item, index)=>(
-          <div key={index} className={styles.itemBigScreen}>
-          <div className={styles.subtitle}>{item.subtitle}</div>
-          <p className={styles.desc}>
-            {item.desc}
-          </p>
-        </div>
+          <AnimationProvider item={item} index={index}/>
         ))}
       </div>
     </div>

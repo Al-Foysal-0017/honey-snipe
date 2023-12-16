@@ -3,15 +3,18 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import styles from "./tokenomics.module.css"
+import styles from "./safety.module.css"
 
 interface Props {
-    text: string;
+    item: {
+      subtitle: string,
+      desc: string
+    },
     index: number;
     textStyle?: string;
 }
 
-const AnimationProvider = ({ text, textStyle, index} : Props) => {
+const AnimationProvider = ({ item, index} : Props) => {
     const {ref, inView} = useInView({
         triggerOnce: false
     })
@@ -21,7 +24,7 @@ const AnimationProvider = ({ text, textStyle, index} : Props) => {
         visible: {opacity: 1}
     }
 
-    const animationDelay = 0.1
+    const animationDelay = 0.2
   return (
     <motion.div
       ref={ref}
@@ -31,7 +34,12 @@ const AnimationProvider = ({ text, textStyle, index} : Props) => {
       custom={index}
       transition={{delay: index * animationDelay}}
     >
-      <p className={`${styles.subtitle} ${textStyle}`}>{text}</p>
+      <div key={index} className={styles.itemBigScreen}>
+          <div className={styles.subtitle}>{item.subtitle}</div>
+          <p className={styles.desc}>
+            {item.desc}
+          </p>
+        </div>
     </motion.div>
   )
 }

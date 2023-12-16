@@ -1,9 +1,16 @@
 "use client";
 import React, { useRef } from 'react';
+import {useInView} from "react-intersection-observer";
 import styles from "./joinMsg.module.css";
 import hover3d from '@/utils/hover';
+import { motion } from "framer-motion";
+import { slideInFromBottom } from '@/utils/motion';
 
 const JoinMsg = () => {
+  const {ref, inView} = useInView({
+    triggerOnce: false
+  });
+
   const hero = useRef<HTMLDivElement>(null);
   const hoverHero = hover3d(hero, {
     x: 20,
@@ -17,17 +24,27 @@ const JoinMsg = () => {
   });
 
   return (
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={inView?"visible":"hidden"}
+    >
     <section style={{ overflow: 'hidden' }} ref={hero} className={styles.container}>
       <div style={{
         transform: hoverHero.transform,
       }}>
-        <div style={{
-          transform: imageHover.transform,
-        }} className={styles.joinMsg}>
+        <motion.div 
+          style={{
+            transform: imageHover.transform,
+          }} 
+          className={styles.joinMsg}
+          variants={slideInFromBottom}
+        >
           Join Honey Snipe and Unlock Limitless Possibilities in Crypto Trading!
-        </div>
+        </motion.div>
       </div>
     </section>
+    </motion.div>
   );
 };
 

@@ -1,5 +1,4 @@
 // "use client"
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -15,7 +14,7 @@ interface Props {
 
 const AnimationProvider = ({ imgPath, cardTitle, cardDesc, index }: Props) => {
   const { ref, inView } = useInView({
-    triggerOnce: true
+    triggerOnce: false
   });
 
   const imageVariants = {
@@ -23,7 +22,7 @@ const AnimationProvider = ({ imgPath, cardTitle, cardDesc, index }: Props) => {
     visible: { opacity: 1 }
   };
 
-  const animationDelay = 0.3;
+  const animationDelay = 0.2;
 
   return (
     <motion.div
