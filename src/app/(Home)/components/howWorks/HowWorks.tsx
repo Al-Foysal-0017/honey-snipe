@@ -36,6 +36,7 @@ const HowWorks = () => {
                 cardTitle={item.cardTitle}
                 cardDesc={item.cardDesc}
                 index={index}
+                key={index}
             />
             ))}
         </div>

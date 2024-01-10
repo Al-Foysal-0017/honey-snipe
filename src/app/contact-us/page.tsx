@@ -6,7 +6,7 @@ const ContactUs = () => {
   return (
     <PageWrapper>
       <div className={styles.temporary}>
-        Contact Us
+      Contact Us
       </div>
     </PageWrapper>
   )

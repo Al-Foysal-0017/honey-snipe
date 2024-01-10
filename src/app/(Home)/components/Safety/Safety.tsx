@@ -78,7 +78,7 @@ const Safety = () => {
       <div>
         <Title className={styles.titleBigScreen}>Safety First</Title>
         {data.map((item, index)=>(
-          <AnimationProvider item={item} index={index}/>
+          <AnimationProvider key={index} item={item} index={index}/>
         ))}
       </div>
     </div>

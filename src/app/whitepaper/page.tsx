@@ -5,8 +5,8 @@ import PageWrapper from '@/components/PageWrapper/PageWrapper'
 const Whitepaper = () => {
   return (
     <PageWrapper>
-      <div className={styles.temporary}>
-        Whitepaper
+      <div className={styles.whitepaper}>
+        <iframe className={styles.pdf} src='/Honey Snipe Pitchdeck.pdf' />
       </div>
     </PageWrapper>
   )
